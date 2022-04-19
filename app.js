@@ -6,8 +6,8 @@
 // a number of minutes as an argument and returns
 // the number of seconds
 
-function convertToSeconds (num1 , num2) {
-    return num1 * num2;
+function convertToSeconds (min) {
+    return min * 60;
 }
 
 console.log(`convertToSeconds(10) === 600 : ${convertToSeconds(10) === 600}`);
@@ -15,24 +15,19 @@ console.log(`convertToSeconds(10) === 600 : ${convertToSeconds(10) === 600}`);
 // 2. areaOfTriangle
 // Write a function called areaOfTriangle that takes in the base and height
 // of a triangle and returns its area
-function areaOfTriangle (5, 10) {
-    var 5;
-    var 10;
-    var s = (5 + 10)/2;
-    var areaOfTriangle = math.sqrt(s*((s-side1)*(s-side2))
+function areaOfTriangle (base, height) {
+    return (base * height)/2; 
 }
 console.log(`areaOfTriangle(5, 10) === 25 : ${areaOfTriangle(5, 10) === 25}`);
 
 // 3. lessThan100
 // Given 2 numbers, return true if their sum is less than 100
 // return false if it is greater than 100
-function lessThan100(5, 10) {
-    if (5 + 10 <100); {
+function lessThan100(num1, num2) {
+    if (num1 + num2 <100); {
         return true;
-    } else {
+    } if (num1 + num2 >100); {
     return false;
-    }
-
 }
 console.log(`lessThan100(5, 10) === true : ${lessThan100(5, 10) === true}`);
 console.log(`lessThan100(100, 10) === false : ${lessThan100(100, 10) === false}`);
@@ -42,10 +37,13 @@ console.log(`lessThan100(100, 10) === false : ${lessThan100(100, 10) === false}`
 // that accepts a first_name and last_name as required parameters
 // and a third parameter called middle_name which is optional.
 // The function should return a string with the first, middle and last names
-function getFormattedName(first_name, middle_name, last_name) {
-    if (middle === null) {
-        return (first_name + ' ' + last_name);
-}   else return {(first_name + ' ' + middle_name + ' ' + last_name);
+function getFormattedName(first_name, last_name, middle_name) {
+    if (!middle_name) {
+        return first_name + ' ' + last_name;
+}       else {
+   const fullName = first_name + ' ' + middle_name + ' ' + last_name;
+        return fullName;
+}
 }
 console.log(
     `getFormattedName('Ruth', 'Ginsburg') === 'Ruth Ginsburg': ${
