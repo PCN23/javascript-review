@@ -16,7 +16,7 @@ console.log(`convertToSeconds(10) === 600 : ${convertToSeconds(10) === 600}`);
 // Write a function called areaOfTriangle that takes in the base and height
 // of a triangle and returns its area
 function areaOfTriangle(base, height) {
-    return (base * height)/ 2; 
+    return (base * height) / 2; 
 }
 console.log(`areaOfTriangle(5, 10) === 25 : ${areaOfTriangle(5, 10) === 25}`);
 
@@ -24,14 +24,16 @@ console.log(`areaOfTriangle(5, 10) === 25 : ${areaOfTriangle(5, 10) === 25}`);
 // Given 2 numbers, return true if their sum is less than 100
 // return false if it is greater than 100
 function lessThan100(num1, num2) {
-    if (num1 + num2 < 100); {
+    if (num1 + num2 < 100) {
         return true;
-    } if (num1 + num2 >100); {
+    } 
+    if (num1 + num2 > 100) {
         return false;
-    }
+    } 
+}
 console.log(`lessThan100(5, 10) === true : ${lessThan100(5, 10) === true}`);
 console.log(`lessThan100(100, 10) === false : ${lessThan100(100, 10) === false}`);
-}
+
 // 4. getFormattedName
 // Write a function called getFormattedName
 // that accepts a first_name and last_name as required parameters
@@ -40,10 +42,10 @@ console.log(`lessThan100(100, 10) === false : ${lessThan100(100, 10) === false}`
 function getFormattedName(first_name, last_name, middle_name) {
     if (!middle_name) {
         return first_name + ' ' + last_name;
-}       else {
-   const fullName = first_name + ' ' + middle_name + ' ' + last_name;
+    } else {
+        const fullName = first_name + ' ' + middle_name + ' ' + last_name;
         return fullName;
-}
+    }
 }
 console.log(
     `getFormattedName('Ruth', 'Ginsburg') === 'Ruth Ginsburg': ${
